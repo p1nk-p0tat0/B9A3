@@ -9,20 +9,80 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<!-- google fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind custom classes  -->
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- font styles  -->
+<style>
+    .font-manrope {
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
 
 
 </head>
 
 
-<body>
+<body class="font-manrope">
     <header>
-        <nav>
+        <nav class="container mx-auto  my-12 flex justify-between items-center">
+              <div class="dropdown lg:hidden">
+                    <div  tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="hover:bg-red-300">About</a></li>
+                      <li><a class="hover:bg-red-300">Pages</a></li>
+                      <li><a class="hover:bg-red-300">Blog</a></li>
+                      <li><a class="hover:bg-red-300">Contact</a></li>
+                    </ul>
+                  </div>
+              <div>
+                <h1 class="text-2xl lg:text-4xl font-extrabold  lg:pr-0">Hockey<span class="text-red-500">'</span>s</h1>
+              </div>
 
+              <div class="hidden lg:flex justify-center items-center gap-7">
+                <h3 class="hover:scale-110 duration-200 text-red-500 font-bold"><a href="">Home</a></h3>
+                <h3 class="hover:scale-110 duration-200 hover:text-red-500  border-2 border-transparent"><a href="">About</a></h3>
+                <h3 class="hover:scale-110 duration-200 hover:text-red-500 border-2 border-transparent"><a href="">Pages</a></h3>
+                <h3 class="hover:scale-110 duration-200 hover:text-red-500  border-2 border-transparent"><a href="">Blog</a></h3>
+                <h3 class="hover:scale-110 duration-200 hover:text-red-500  border-2 border-transparent"><a href="">Contact</a></h3> 
+               
+            </div>
+           
+            <div class="flex space-x-6">
+                    <div class="hidden lg:block">
+                    <button class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                </div>
+                    <div>
+                      <a class="btn w-32 mx-5 h-10 lg:w-36 text-lg lg:text-xl font-bold text-white outline-none bg-red-500 hover:bg-red-400">Get Ticket</a>
+                    </div>
+                  </div> 
+         
         </nav>
     </header>
 
 <main>
- <h1>Test Header</h1>
+
 </main>
 
 
