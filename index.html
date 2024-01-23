@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hockey's</title>
 <!-- Tailwind and Daisy UI Script  -->
 
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -14,7 +14,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+<!-- favicon  -->
+<link rel="icon" type="image/x-icon" href="./images/hockey-4.png">
 <!-- Tailwind custom classes  -->
 
 <script>
@@ -42,7 +43,8 @@
 
 <body class="font-manrope">
     <header>
-        <nav class="container mx-auto  my-12 flex justify-between items-center">
+        <!-- Navbar section  -->
+        <nav class="container mx-auto px-5 lg:px-0 my-12 flex justify-between items-center">
               <div class="dropdown lg:hidden">
                     <div  tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
@@ -58,7 +60,7 @@
                 <h1 class="text-2xl lg:text-4xl font-extrabold  lg:pr-0">Hockey<span class="text-red-500">'</span>s</h1>
               </div>
 
-              <div class="hidden lg:flex justify-center items-center gap-7">
+              <div class="hidden lg:flex justify-center items-center gap-11">
                 <h3 class="hover:scale-110 duration-200 text-red-500 font-bold"><a href="">Home</a></h3>
                 <h3 class="hover:scale-110 duration-200 hover:text-red-500  border-2 border-transparent"><a href="">About</a></h3>
                 <h3 class="hover:scale-110 duration-200 hover:text-red-500 border-2 border-transparent"><a href="">Pages</a></h3>
@@ -74,11 +76,49 @@
                     </button>
                 </div>
                     <div>
-                      <a class="btn w-32 mx-5 h-10 lg:w-36 text-lg lg:text-xl font-bold text-white outline-none bg-red-500 hover:bg-red-400">Get Ticket</a>
+                      <a class="btn w-32  h-10 lg:w-36  lm-5 text-lg lg:text-xl font-bold text-white border-none bg-red-500 hover:bg-red-400">Get Ticket</a>
                     </div>
                   </div> 
          
         </nav>
+    <!-- Banner section  -->
+     <section class="container mx-auto px-5 lg:px-0">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full  h-52 lg:h-[550px] flex items-end justify-center  bg-cover bg-center  bg-no-repeat bg-[url(./images/1.png)] border rounded-2xl">
+              
+              <div class="absolute flex lg:items-center lg:transform lg:-translate-y-1/2  lg:left-6 lg:bottom-0 items-end content-end space-x-4 mb-4">
+                <a href="#slide4" class="btn btn-circle text-white bg-black border-none outline-none">❮</a> 
+                <a href="#slide2" class="btn btn-circle  text-white bg-black border-none outline-none">❯</a>
+              </div>
+            
+            </div> 
+            <div class="lg:w-[38rem]  w-[91%]  border h-40 bg-[#131318] border-none outline-none absolute rounded-2xl translate-y-60 lg:translate-y-[23rem] lg:translate-x-[38rem] ">
+              <div class="space-y-2 lg:p-6 p-4 w-full ">
+              <h3 class="text-white lg:text-2xl text-base font-bold lg:font-extrabold ">Meet all the heroes from the field</h3>
+              <p class="text-[#ffffff99]   font-normal text-sm lg:text-base">Explore the profiles of our hockey heroes, from seasoned veterans with an unmatched legacy to rising stars who bring fresh energy to the rink. Discover the stories behind each player's journey.</p>
+            </div>
+            </div>
+            
+          
+
+
+            <div id="slide2" class="carousel-item relative w-full h-52 lg:h-[550px]   bg-cover bg-center  bg-no-repeat bg-[url(./images/field-hockey.jpg)] border rounded-2xl flex items-end justify-center">
+            
+              <div class="absolute flex lg:items-center lg:transform lg:-translate-y-1/2  lg:left-6 lg:bottom-0 items-end content-end space-x-4 mb-4">
+                <a href="#slide1" class="btn btn-circle  text-white bg-black border-none outline-none">❮</a> 
+                <a href="#slide3" class="btn btn-circle  text-white bg-black border-none outline-none">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full h-52 lg:h-[550px]  bg-center bg-cover bg-no-repeat bg-[url(./images/ice-hockey-digital.webp)] border rounded-2xl flex items-end justify-center">
+              
+              <div class="absolute flex lg:items-center lg:transform lg:-translate-y-1/2  lg:left-6 lg:bottom-0 items-end content-end space-x-4 mb-4">
+                <a href="#slide3" class="btn btn-circle  text-white bg-black border-none outline-none">❮</a> 
+                <a href="#slide1" class="btn btn-circle  text-white bg-black border-none outline-none">❯</a>
+              </div>
+            </div> 
+          
+    </div>
+</section>
     </header>
 
 <main>
