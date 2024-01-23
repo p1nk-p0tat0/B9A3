@@ -25,7 +25,8 @@
           colors: {
             clifford: '#da373d',
             'dashed-line': 'rgba(19, 19, 24, 0.20);',
-            'dim-dark' : 'rgba(19, 19, 24, 0.60);'
+            'dim-dark' : 'rgba(19, 19, 24, 0.60);',
+            'orng-btn' : '#FF4240;'
           }
         }
       }
@@ -46,7 +47,7 @@
 <body class="font-manrope">
     <header>
         <!-- Navbar section  -->
-        <nav class="container mx-auto px-5 lg:px-0 my-12 flex justify-between items-center border border-red-600">
+        <nav class="container mx-auto  px-5 lg:px-0 my-12 flex justify-between items-center border border-red-600 w-auto">
               <div class="dropdown lg:hidden">
                     <div  tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
@@ -84,12 +85,12 @@
          
         </nav>
     <!-- Banner section  -->
-     <section class="container mx-auto px-5 lg:px-0">
+     <section class="container lg:mx-auto mx-5  lg:px-0 w-auto border border-red-500 ">
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full  h-52 lg:h-[550px] flex items-end justify-center  bg-cover bg-center  bg-no-repeat bg-[url(./images/1.png)]  rounded-2xl border-none outline-none ">
               
               <div class="absolute flex lg:items-center lg:transform lg:-translate-y-1/2  lg:left-6 lg:bottom-0 items-end content-end space-x-4 mb-4">
-                <a href="#slide4" class="btn btn-circle text-white bg-black border-none outline-none">❮</a> 
+                <a href="#slide3" class="btn btn-circle text-white bg-black border-none outline-none">❮</a> 
                 <a href="#slide2" class="btn btn-circle  text-white bg-black border-none outline-none">❯</a>
               </div>
             
@@ -104,17 +105,17 @@
           
 
 
-            <div id="slide2" class="carousel-item relative w-full h-52 lg:h-[550px]   bg-cover bg-center  bg-no-repeat bg-[url(./images/field-hockey.jpg)] border-none outline-none rounded-2xl flex items-end justify-center">
+            <div id="slide2" class="carousel-item relative w-full h-52 lg:h-[550px]   bg-cover bg-center  bg-no-repeat bg-[linear-gradient(45deg,rgba(19,19,24,0.1),rgba(19,19,24,0.5)),url(./images/field-hockey.jpg)] border-none outline-none rounded-2xl flex items-end justify-center">
             
               <div class="absolute flex lg:items-center lg:transform lg:-translate-y-1/2  lg:left-6 lg:bottom-0 items-end content-end space-x-4 mb-4">
                 <a href="#slide1" class="btn btn-circle  text-white bg-black border-none outline-none">❮</a> 
                 <a href="#slide3" class="btn btn-circle  text-white bg-black border-none outline-none">❯</a>
               </div>
             </div> 
-            <div id="slide3" class="carousel-item relative w-full h-52 lg:h-[550px]  bg-center bg-cover bg-no-repeat bg-[url(./images/ice-hockey-digital.webp)] border-none outline-none rounded-2xl flex items-end justify-center">
+            <div id="slide3" class="carousel-item relative w-full h-52 lg:h-[550px]  bg-center bg-cover bg-no-repeat bg-[linear-gradient(45deg,rgba(19,19,24,0.1),rgba(19,19,24,0.5)),url(./images/ice-hockey-digital.webp)] border-none outline-none rounded-2xl flex items-end justify-center">
               
               <div class="absolute flex lg:items-center lg:transform lg:-translate-y-1/2  lg:left-6 lg:bottom-0 items-end content-end space-x-4 mb-4">
-                <a href="#slide3" class="btn btn-circle  text-white bg-black border-none outline-none">❮</a> 
+                <a href="#slide2" class="btn btn-circle  text-white bg-black border-none outline-none">❮</a> 
                 <a href="#slide1" class="btn btn-circle  text-white bg-black border-none outline-none">❯</a>
               </div>
             </div> 
@@ -129,10 +130,10 @@
     <hr class="border-dashed border-dashed-line mx-5">
   </div>
   <!-- Professional Hockey Club Section  -->
-  <section class="container lg:mx-auto  p-6 lg:p-8  ">
+  <section class="container lg:mx-auto w-auto mx-5 lg:p-8 border border-red-500 ">
    <div class="display flex flex-col gap-5 lg:gap-6 justify-center items-center text-center">
     <h1 class="text-black font-extrabold text-xl lg:text-3xl">Professional Hockey Club</h1>
-    <p class=" text-dim-dark font-medium text-base">Welcome to our professional hockey club, where passion meets precision on the field of professional field hockey. As a premier club dedicated to the artistry and athleticism of the sport, we stand as a beacon of excellence,</p>
+    <p class=" text-dim-dark font-medium text-base">Welcome to our professional hockey club, where passion meets precision on the field of professional field hockey. As a premier club dedicated to the artistry and athleticism of the sport, we stand as a beacon of excellence.</p>
    </div>
     
   </section>
@@ -166,11 +167,52 @@
 </section>
 
 
+<!-- Programs Section  -->
+
+
+<div class="container  mx-auto mt-24">
+  <hr class="border-dashed border-dashed-line mx-5">
+</div>
+
+<section class="container lg:mx-auto w-auto mx-5 mt-8 lg:p-8 border border-red-500">
+  <div class="display flex flex-col gap-5 lg:gap-6 justify-center items-center text-center">
+   <h1 class="text-black font-extrabold text-xl lg:text-3xl">Programs Section</h1>
+   <p class=" text-dim-dark font-medium text-base">Elevate your field hockey experience with our diverse range of programs tailored for enthusiasts of all ages and skill levels. Explore our programs designed to inspire growth, sportsmanship, and a lifelong love for the game.</p>
+  </div>
+   
+ </section>
+
+ <div class="container lg:mt-8 mt-6 mx-auto">
+  <hr class="border-dashed border-dashed-line mx-5">
+</div>
+
+<section class="container lg:mx-auto px-5 mt-12 text-white grid lg:grid-rows-2 grid-rows-3 lg:grid-cols-2  grid-cols-1 gap-6  grid-flow-col lg:grid-flow-row">
+
+    <div class="bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.7)),url(./images/2.png)] bg-cover lg:p-11 flex flex-col justify-start items-start  lg:gap-6 gap-3 p-4 rounded-2xl lg:h-auto h-60 lg:w-auto ">
+      <h3 class="font-extrabold text-xl lg:text-3xl">Junior Program</h3>
+      <p class="text-sm font-medium lg:text-base lg:h-auto h-24 lg:w-auto overflow-auto ">Nurture the next generation of field hockey stars with our Junior Program.Tailored for young enthusiasts, our program is designed to instill a love for the game while developing fundamental skills, fostering teamwork, and creating a positive and supportive environment.</p>
+       <button class="btn lg:text-xl text-base font-bold  lg:px-5 text-white bg-orng-btn hover:bg-orng-btn border border-orng-btn hover:border-orng-btn outline-none lg:h-10 lg:w-auto ">Register Now!</button> 
+    </div>
+    
+     <div class="bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.7)),url(./images/3.png)] bg-cover  lg:p-11 flex flex-col justify-start items-start lg:gap-6 gap-3 p-4 rounded-2xl  h-60 lg:h-auto lg:w-auto">
+      <h3 class="font-extrabold text-xl lg:text-3xl">Teenager Program</h3>
+      <p class="text-sm font-medium lg:text-base overflow-auto">Empower the teenage spirit on the field with our dynamic Teen Field Hockey Program. Designed to cater to the unique energy and aspirations of teenagers, this program combines skill development and strategic gameplay to create an enriching field hockey experience.</p>
+      <button class="btn lg:text-xl text-base font-bold lg:px-5 text-white bg-orng-btn hover:bg-orng-btn border border-orng-btn hover:border-orng-btn outline-none">Register Now!</button>
+    </div>
+
+   <div class="bg-[linear-gradient(360deg,rgba(19,19,24,0.1),rgba(19,19,24,0.6)),url(./images/4.png)] lg:col-span-2  bg-no-repeat bg-cover lg:bg-right-bottom  lg:p-11 p-4 flex flex-col justify-start items-start lg:gap-6 gap-3 rounded-2xl lg:h-[150%] h-60 lg:w-auto">
+      <h3 class="font-extrabold text-xl lg:text-3xl">Professional Program</h3>
+      <p class="text-sm font-medium lg:text-base lg:w-1/2 overflow-auto">Elevate your game to the professional level with the elite Professional Field Hockey Program. Tailored for experienced players seeking to compete at the highest echelons of the sport, this program combines advanced training, strategic development, and comprehensive support to unlock your full potential on the field.</p>
+    <button class="btn text-base lg:text-xl font-bold lg:px-5 text-white bg-orng-btn hover:bg-orng-btn border border-orng-btn hover:border-orng-btn outline-none">Register Now!</button> 
+    </div> 
 
 
 
 
-
+  
+  
+</section>
+<section class="h-72 my-20 border mt-48 border-red-600"></section>
 
 
 </main>
