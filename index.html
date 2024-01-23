@@ -24,6 +24,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'dashed-line': 'rgba(19, 19, 24, 0.20);',
+            'dim-dark' : 'rgba(19, 19, 24, 0.60);'
           }
         }
       }
@@ -44,7 +46,7 @@
 <body class="font-manrope">
     <header>
         <!-- Navbar section  -->
-        <nav class="container mx-auto px-5 lg:px-0 my-12 flex justify-between items-center">
+        <nav class="container mx-auto px-5 lg:px-0 my-12 flex justify-between items-center border border-red-600">
               <div class="dropdown lg:hidden">
                     <div  tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
@@ -84,7 +86,7 @@
     <!-- Banner section  -->
      <section class="container mx-auto px-5 lg:px-0">
         <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full  h-52 lg:h-[550px] flex items-end justify-center  bg-cover bg-center  bg-no-repeat bg-[url(./images/1.png)] border rounded-2xl">
+            <div id="slide1" class="carousel-item relative w-full  h-52 lg:h-[550px] flex items-end justify-center  bg-cover bg-center  bg-no-repeat bg-[url(./images/1.png)]  rounded-2xl border-none outline-none ">
               
               <div class="absolute flex lg:items-center lg:transform lg:-translate-y-1/2  lg:left-6 lg:bottom-0 items-end content-end space-x-4 mb-4">
                 <a href="#slide4" class="btn btn-circle text-white bg-black border-none outline-none">❮</a> 
@@ -102,14 +104,14 @@
           
 
 
-            <div id="slide2" class="carousel-item relative w-full h-52 lg:h-[550px]   bg-cover bg-center  bg-no-repeat bg-[url(./images/field-hockey.jpg)] border rounded-2xl flex items-end justify-center">
+            <div id="slide2" class="carousel-item relative w-full h-52 lg:h-[550px]   bg-cover bg-center  bg-no-repeat bg-[url(./images/field-hockey.jpg)] border-none outline-none rounded-2xl flex items-end justify-center">
             
               <div class="absolute flex lg:items-center lg:transform lg:-translate-y-1/2  lg:left-6 lg:bottom-0 items-end content-end space-x-4 mb-4">
                 <a href="#slide1" class="btn btn-circle  text-white bg-black border-none outline-none">❮</a> 
                 <a href="#slide3" class="btn btn-circle  text-white bg-black border-none outline-none">❯</a>
               </div>
             </div> 
-            <div id="slide3" class="carousel-item relative w-full h-52 lg:h-[550px]  bg-center bg-cover bg-no-repeat bg-[url(./images/ice-hockey-digital.webp)] border rounded-2xl flex items-end justify-center">
+            <div id="slide3" class="carousel-item relative w-full h-52 lg:h-[550px]  bg-center bg-cover bg-no-repeat bg-[url(./images/ice-hockey-digital.webp)] border-none outline-none rounded-2xl flex items-end justify-center">
               
               <div class="absolute flex lg:items-center lg:transform lg:-translate-y-1/2  lg:left-6 lg:bottom-0 items-end content-end space-x-4 mb-4">
                 <a href="#slide3" class="btn btn-circle  text-white bg-black border-none outline-none">❮</a> 
@@ -122,6 +124,54 @@
     </header>
 
 <main>
+
+  <div class="container mx-auto  lg:mt-24 mt-52">
+    <hr class="border-dashed border-dashed-line mx-5">
+  </div>
+  <!-- Professional Hockey Club Section  -->
+  <section class="container lg:mx-auto  p-6 lg:p-8  ">
+   <div class="display flex flex-col gap-5 lg:gap-6 justify-center items-center text-center">
+    <h1 class="text-black font-extrabold text-xl lg:text-3xl">Professional Hockey Club</h1>
+    <p class=" text-dim-dark font-medium text-base">Welcome to our professional hockey club, where passion meets precision on the field of professional field hockey. As a premier club dedicated to the artistry and athleticism of the sport, we stand as a beacon of excellence,</p>
+   </div>
+    
+  </section>
+
+  <div class="container  mx-auto ">
+    <hr class="border-dashed border-dashed-line mx-5">
+  </div>
+
+<section class="container mt-12 lg:mx-auto mx-5 border border-green-700 flex flex-col lg:flex-row items-center gap-6 justify-around w-auto">
+  <div class="flex flex-col mx-auto gap-5  lg:gap-6 justify-center items-center">
+    <div class="radial-progress text-red-500 rotate-[140deg]" style="--value:87;" role="progressbar"><span class="-rotate-[140deg] text-black font-bold">87%</span></div>
+    <h3 class="text-xl font-semibold">Player Facility</h3>
+    <p class="text-dim-dark text-center w-60">We provide you with the best player facilities in the industry </p>
+  </div>
+
+  <div class="flex flex-col mx-auto gap-5 lg:gap-6 justify-center items-center">
+    <div class="radial-progress text-green-500 rotate-[110deg]" style="--value:95;" role="progressbar"><span class="-rotate-[110deg] text-black font-bold">95%</span></div>
+    <h3 class="text-xl font-semibold">Experienced Coach</h3>
+    <p class="text-dim-dark text-center w-60">Our coaches are highly experienced professionals</p>
+  </div>
+  <div class="flex flex-col mx-auto gap-5 lg:gap-6 justify-center items-center">
+    <div class="radial-progress text-orange-400 rotate-[140deg] " style="--value:90;" role="progressbar"><span class="-rotate-[140deg] text-black font-bold">90%</span></div>
+    <h3 class="text-xl font-semibold">Senior Player</h3>
+    <p class="text-dim-dark text-center w-60">We provide special facilities for veteran players</p>
+  </div>
+  <div class="flex flex-col mx-auto gap-5 lg:gap-6 justify-center items-center">
+    <div class="radial-progress text-blue-500 rotate-[155deg]" style="--value:80;" role="progressbar"><span class="-rotate-[155deg] text-black font-bold">80%</span></div>
+    <h3 class="text-xl font-semibold">Training Ground</h3>
+    <p class="text-dim-dark text-center w-60">We have training grounds with high-quality equipments </p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
 
 </main>
 
